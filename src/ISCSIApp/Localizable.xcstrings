@@ -1,6 +1,72 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "macOS has registered another copy of %@. Eject connected disks and quit any other copy, then click Use This Copy to switch the registration to the app you opened.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別の%@の機能拡張が登録されています。接続中のディスクを取り出し、ほかに起動しているコピーを終了してから、“このコピーを使用”をクリックしてください。"
+          }
+        }
+      }
+    },
+    "Use This Copy": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このコピーを使用"
+          }
+        }
+      }
+    },
+    "Open Applications Folder": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“アプリケーション”フォルダを開く"
+          }
+        }
+      }
+    },
+    "Move %@ in Finder": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finderで%@を移動してください"
+          }
+        }
+      }
+    },
+    "This copy is running from a read-only location. Eject connected disks and quit %@. In Finder, drag the app into Applications and open it there. If it is already there, move it to another folder in Finder, then move it back.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このコピーは読み出し専用の場所から実行されています。接続中のディスクを取り出し、%@を終了してください。Finderでアプリを“アプリケーション”フォルダにドラッグし、そこから開いてください。すでにそのフォルダにある場合も、Finderで一度別のフォルダへ移動してから戻してください。"
+          }
+        }
+      }
+    },
+    "Registering the file system extension…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファイルシステム機能拡張を登録中…"
+          }
+        }
+      }
+    },
     "Check for Updates…": {
       "extractionState": "manual",
       "localizations": {
@@ -2292,17 +2358,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "“システム設定”＞“一般”＞“ログイン項目と機能拡張”で“カテゴリ別”をクリックし、“ファイルシステム機能拡張”で%@をオンにしてください。"
-          }
-        }
-      }
-    },
-    "The file system extension belongs to another copy of %@. Eject connected disks before reinstalling %@, then click Check Again.": {
-      "extractionState": "manual",
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "別の%@アプリのファイルシステム機能拡張が登録されています。接続中のディスクを取り出してから%@をインストールし直し、“もう一度確認”をクリックしてください。"
           }
         }
       }

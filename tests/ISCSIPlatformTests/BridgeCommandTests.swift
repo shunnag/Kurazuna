@@ -158,3 +158,125 @@ private func unmountedBridgeRetainsMetadataAndDistinguishesItsCleanupFailure(_ s
     #expect(await store.removalAttempts == 2)
     #expect(await command.calls.isEmpty)
 }
+
+private let launchFailure = SystemCommandError.failed(
+    program: "mount", status: 69,
+    detail:
+        "mount: Loading resource: Operation failed. (com.apple.extensionKit.errorDomain error 2.)\nmount: File system named \(ApplicationIdentity.current.fileSystemType) not found\n"
+)
+
+@Test
+private func onlyInitialExtensionLoadingErrorsQualifyForAMountRetry() {
+    guard case .failed(let program, let status, let detail) = launchFailure else { return }
+    #expect(SystemAttachmentBackend.isInitialExtensionLaunchFailure(launchFailure))
+    for error in [
+        SystemCommandError.timedOut(program: program),
+        .failed(program: "umount", status: status, detail: detail),
+        .failed(program: program, status: 1, detail: detail),
+        .failed(
+            program: program, status: status,
+            detail: detail.replacingOccurrences(of: " error 2.", with: " error 20.")),
+        .failed(
+            program: program, status: status,
+            detail: detail.replacingOccurrences(
+                of: "File system named", with: "File system named other-")),
+        .failed(
+            program: program, status: status,
+            detail: detail + "mount: a different failure occurred\n"),
+        .failed(program: program, status: status, detail: "write failed"),
+    ] {
+        #expect(!SystemAttachmentBackend.isInitialExtensionLaunchFailure(error))
+    }
+}
+
+private actor FailingExtensionLaunch {
+    private(set) var arguments: [[String]] = []
+    private let change: String
+    init(_ change: String) { self.change = change }
+    func run(_ program: String, _ args: [String], _ timeout: TimeInterval) async throws -> Data {
+        arguments.append(args)
+        if arguments.count == 1 {
+            let path = URL(fileURLWithPath: try #require(args.last), isDirectory: true)
+            if change == "file" { try Data().write(to: path.appendingPathComponent(".hidden")) }
+            if change == "directory" {
+                try FileManager.default.moveItem(
+                    at: path, to: path.appendingPathExtension("previous"))
+                try FileManager.default.createDirectory(
+                    at: path, withIntermediateDirectories: false,
+                    attributes: [.posixPermissions: 0o700])
+            }
+        }
+        throw launchFailure
+    }
+}
+
+@Test(arguments: ["none", "file", "directory", "nested mount"])
+private func extensionLoadRetriesAtMostOnceAndRequiresTheOriginalUnusedBridge(_ change: String)
+    async throws
+{
+    let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        .resolvingSymlinksInPath()
+    defer { try? FileManager.default.removeItem(at: root) }
+    let id = UUID()
+    let descriptor = try ConnectionDescriptor(
+        profileID: UUID(), portal: Portal("example.invalid"),
+        initiatorName: "iqn.2026-10.test:bridge", targetName: "iqn.2026-10.test:disk",
+        lun: LogicalUnit(0),
+        readOnly: false, isid: [0x80, 1, 2, 3, 4, 5], mountID: id)
+    let reply = try PropertyListSerialization.data(
+        fromPropertyList: ["images": []], format: .binary, options: 0)
+    let images = DiskImages(run: { _, _, _ in reply }, fileSize: { _ in 0 })
+    let recorder = FailingExtensionLaunch(change)
+    let bridge = root.appendingPathComponent(id.uuidString, isDirectory: true)
+    let store = BridgeMetadata()
+    let backend = SystemAttachmentBackend(
+        root: root, resources: store, diskImages: images, mountCommand: recorder.run,
+        mounts: {
+            guard change == "nested mount" else { return [] }
+            return [
+                .init(
+                    type: "apfs", source: "/dev/disk-test",
+                    path: bridge.appendingPathComponent("inner").path, owner: getuid(), flags: 0)
+            ]
+        })
+    if change == "none" {
+        await #expect(throws: launchFailure) {
+            try await backend.mountBridge(descriptor, at: bridge)
+        }
+    } else {
+        await #expect(throws: AttachmentError.ownershipUnverified) {
+            try await backend.mountBridge(descriptor, at: bridge)
+        }
+    }
+    let calls = await recorder.arguments
+    #expect(calls.count == (change == "none" ? 2 : 1))
+    #expect(calls.first == calls.last)
+    #expect(await store.values.count == 1)
+}
+
+@Test
+private func cancellingTheInitialMountDoesNotRetryAnExtensionLaunchFailure() async throws {
+    let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        .resolvingSymlinksInPath()
+    defer { try? FileManager.default.removeItem(at: root) }
+    let id = UUID()
+    let descriptor = try ConnectionDescriptor(
+        profileID: UUID(), portal: Portal("example.invalid"),
+        initiatorName: "iqn.2026-10.test:bridge", targetName: "iqn.2026-10.test:disk",
+        lun: LogicalUnit(0),
+        readOnly: true, isid: [0x80, 1, 2, 3, 4, 5], mountID: id)
+    let command = HeldBridgeCommand()
+    let backend = SystemAttachmentBackend(
+        root: root,
+        mountCommand: { path, arguments, timeout in
+            _ = try await command.run(path, arguments, timeout)
+            throw launchFailure
+        })
+    let bridge = try await backend.bridgeURL(for: id)
+    let task = Task { try await backend.mountBridge(descriptor, at: bridge) }
+    while !(await command.isPaused) { await Task.yield() }
+    task.cancel()
+    await command.release()
+    await #expect(throws: CancellationError.self) { try await task.value }
+    #expect(await command.calls.count == 1)
+}

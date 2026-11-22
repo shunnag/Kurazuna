@@ -68,6 +68,30 @@ struct ExtensionRegistrationIdentity: Codable, Sendable, Equatable {
         return Self(uid: geteuid(), application: application, module: module)
     }
 
+    static func conflictingApplication(_ moduleURL: URL, current: Self) throws -> BundleIdentity {
+        guard moduleURL.isFileURL, moduleURL.host?.isEmpty != false, moduleURL.query == nil,
+            moduleURL.fragment == nil
+        else { throw POSIXError(.EINVAL) }
+        let module = moduleURL.resolvingSymlinksInPath().standardizedFileURL
+        let app = module.deletingLastPathComponent().deletingLastPathComponent()
+            .deletingLastPathComponent()
+        guard
+            FileSystemExtensionAvailability.expectedModuleURL(in: app)?.standardizedFileURL.path
+                == module.path
+        else { throw POSIXError(.EINVAL) }
+        let (host, _) = try bundle(app)
+        let (extensionBundle, _) = try bundle(module)
+        guard host.identifier == current.application.identifier,
+            extensionBundle.identifier == current.module.identifier,
+            host.team == current.application.team, extensionBundle.team == current.module.team,
+            host.volumeUUID != current.application.volumeUUID
+                || host.inode != current.application.inode,
+            extensionBundle.volumeUUID != current.module.volumeUUID
+                || extensionBundle.inode != current.module.inode
+        else { throw POSIXError(.EACCES) }
+        return host
+    }
+
     private static func bundle(_ url: URL) throws -> (BundleIdentity, [String: Any]) {
         let url = url.resolvingSymlinksInPath().standardizedFileURL
         let descriptor = open(url.path, O_RDONLY | O_DIRECTORY | O_CLOEXEC | O_NOFOLLOW)

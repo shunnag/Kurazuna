@@ -17,17 +17,17 @@ private let registrationTestVolume = UUID(
 
 private func installedIdentity(
     _ code: UInt8 = 1, inode: UInt64 = 10, device: Int32 = 1,
-    volume: UUID = registrationTestVolume
+    volume: UUID = registrationTestVolume, path: String = "/Applications/Kurazuna.app"
 )
     -> ExtensionRegistrationIdentity
 {
     ExtensionRegistrationIdentity(
         uid: geteuid(),
         application: .init(
-            path: "/Applications/Kurazuna.app", device: device, volumeUUID: volume, inode: inode,
+            path: path, device: device, volumeUUID: volume, inode: inode,
             identifier: "dev.soba.iscsi.kurazuna", team: "FQTM2788K5", codeHash: Data([code])),
         module: .init(
-            path: "/Applications/Kurazuna.app/Contents/Extensions/ISCSIFSExtension.appex",
+            path: path + "/Contents/Extensions/ISCSIFSExtension.appex",
             device: device, volumeUUID: volume, inode: inode + 1,
             identifier: "dev.soba.iscsi.kurazuna.FileSystem",
             team: "FQTM2788K5", codeHash: Data([code, 2])))
@@ -444,4 +444,22 @@ private actor RegistrationCancellationGate {
     await gate.releaseCleanup()
     await task.value
     #expect(await gate.finished)
+}
+
+@Test
+private func aMoveOfTheSameSignedAppRegistersTheNewPathOnce() async throws {
+    let root = try registrationRoot()
+    defer { try? FileManager.default.removeItem(at: root) }
+    let commands = RegistrationCommands()
+    let previous = installedIdentity(path: "/Users/test/Applications/Kurazuna.app")
+    let current = installedIdentity()
+    var outcomes: [FileSystemExtensionPreparation.Outcome] = []
+    for location in [previous, current, current] {
+        let result = try await FileSystemExtensionPreparation.prepare(
+            supportURL: root, capture: { location }, permitted: { true },
+            run: { stage, _ in await commands.record(stage) })
+        outcomes.append(result)
+    }
+    #expect(outcomes == [.submitted, .submitted, .alreadyAttempted])
+    #expect(await commands.stages.count == 4)
 }

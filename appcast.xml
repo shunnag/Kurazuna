@@ -7,14 +7,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Kurazuna software updates</description>
     <item>
       <title>Kurazuna 1.0 beta 1</title>
-      <pubDate>Sun, 22 Nov 2026 11:34:00 +0000</pubDate>
-      <sparkle:version>203</sparkle:version>
+      <pubDate>Sun, 22 Nov 2026 20:15:41 +0000</pubDate>
+      <sparkle:version>205</sparkle:version>
       <sparkle:shortVersionString>1.0 beta 1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/shunnag/Kurazuna/releases/download/v1.0-beta.1/Kurazuna-1.0-beta.1.zip" length="7373881" type="application/octet-stream" sparkle:edSignature="9Onj5aAVCc6FhCyps0fbW57OmdXj3xX5qoRIiz5Z5UsCaIm0rzk47Rng+mSJb6ERK4zEza0g0IbM4yp+BRABAQ=="></enclosure>
+      <enclosure url="https://github.com/shunnag/Kurazuna/releases/download/v1.0-beta.1/Kurazuna-1.0-beta.1.zip" length="7410113" type="application/octet-stream" sparkle:edSignature="4ZUQMYGR8T+qm/oSGSplETjdYvIpKBRRupOSFcqbqxFLo39XjTl0ZcKuI//Pev1EML1CuJkwIU6YsZaRFqs8BA=="></enclosure>
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: zu36vBlDVtpx08zfqWlOQLLClogv3WX/2ha9vJqG94mxQX4c3hygAG0nwd7+mxfgLj0eCByVCNEqWIb+Fka+Ag==
+edSignature: KJXHKPCw2ArUestn7GTF+IgEgvNF1k6NagHEJ7m7IHsrQsqJiMcayNxp3PASCodojuq3FpmnyNalMv6TYBJTAw==
 length: 1155
 -->

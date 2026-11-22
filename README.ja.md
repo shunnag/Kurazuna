@@ -4,7 +4,7 @@
 
 Kurazuna（くらづな）は Mac 用の iSCSI イニシエータです。ネットワーク上のディスクを Mac に接続して、Finder やディスクユーティリティで使えます。Apple シリコンの Mac と macOS 27 以降に対応します。
 
-[GitHub Releases](https://github.com/shunnag/Kurazuna/releases/tag/v1.0-beta.1) から **Kurazuna-1.0-beta.1.zip** をダウンロードします。ZIP を開き、Kurazuna を「アプリケーション」フォルダに移動してください。
+[GitHub Releases](https://github.com/shunnag/Kurazuna/releases/tag/v1.0-beta.1) から **Kurazuna-1.0-beta.1.zip** をダウンロードします。ZIP を開き、初回起動の前にFinderでKurazunaを「アプリケーション」フォルダにドラッグしてください。あとで場所を変えるときは、接続中のディスクを取り出し、Kurazunaを終了してからFinderで移動し、移動先から開きます。別のコピーが登録されていると表示されたら「このコピーを使用」を選びます。有効化を求められた場合は「ファイルシステム機能拡張」でKurazunaをオンにしてください。
 
 ![Kurazuna Preview のサンプル画面。接続済み、再接続中、接続可能なディスクが並んでいます。](docs/images/disks-ja.jpg)
 

@@ -10,6 +10,7 @@ signed Release build in build/SignedRelease, installed as ~/Applications/Kurazun
 probe takes its identity from the Swift configuration, so release needs the probe from
 `make build-release-probe` (`swift build -c release`) and accepts only ISCSIFSKitProbe.
 Set ISCSI_TEST_DISTRIBUTION_APP to a Developer ID export to test its installed copy.
+Set ISCSI_TEST_SYSTEM_INSTALL=1 to check /Applications for the release edition.
 The probe continues to use the separate development validation identity and profile.
 """
 
@@ -168,7 +169,8 @@ def verify_module(module_path):
                    cwd=ROOT, check=True, timeout=30)
     product = expected_application(identity)
     if os.environ.get("ISCSI_TEST_DISTRIBUTION_APP") is not None:
-        installed = Path.home() / "Applications" / (identity.application_name + ".app")
+        applications = Path("/Applications") if os.environ.get("ISCSI_TEST_SYSTEM_INSTALL") == "1" else Path.home() / "Applications"
+        installed = applications / (identity.application_name + ".app")
         if app.resolve() != installed.resolve():
             raise ValueError("FSKit selected a different copy from the installed distribution app")
     expected = product / "Contents/Extensions/ISCSIFSExtension.appex"

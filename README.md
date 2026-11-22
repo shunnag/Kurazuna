@@ -4,7 +4,7 @@
 
 Kurazuna (蔵綱, *kurazuna*) is an iSCSI initiator for Apple silicon Macs running macOS 27 or later. Connect a disk on your storage server and use it in Finder or Disk Utility. The bundled FSKit extension runs in user space.
 
-Download **Kurazuna-1.0-beta.1.zip** from [GitHub Releases](https://github.com/shunnag/Kurazuna/releases/tag/v1.0-beta.1), open the ZIP, and move Kurazuna to Applications.
+Download **Kurazuna-1.0-beta.1.zip** from [GitHub Releases](https://github.com/shunnag/Kurazuna/releases/tag/v1.0-beta.1), open the ZIP, then use Finder to drag Kurazuna into Applications before opening it. To move it later, eject connected disks, quit Kurazuna, move the app in Finder, and open it from the new folder. If macOS still selects another copy, click **Use This Copy**. If asked, turn Kurazuna on in **File System Extensions**.
 
 ![Kurazuna Preview with sample disks connected, reconnecting, and available to connect](docs/images/disks-en.jpg)
 

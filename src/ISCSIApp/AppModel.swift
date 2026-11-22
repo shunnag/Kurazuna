@@ -716,12 +716,13 @@ struct AppIssue: Identifiable {
 @MainActor @Observable
 final class AppModel {
     enum ExtensionState: Sendable {
-        case checking, unavailable, disabled, differentCopy, ready
+        case checking, unavailable, disabled, differentCopy, readOnlyLocation, ready
 
         var noticeTitle: String {
             switch self {
             case .disabled: AppPermissionGuidance().enableTitle
             case .differentCopy: AppPermissionGuidance().installationTitle
+            case .readOnlyLocation: AppPermissionGuidance().moveTitle
             default: String(localized: "File System Extension Is Unavailable")
             }
         }
@@ -732,6 +733,8 @@ final class AppModel {
                 AppPermissionGuidance().enableMessage
             case .differentCopy:
                 AppPermissionGuidance().installationMessage
+            case .readOnlyLocation:
+                AppPermissionGuidance().moveMessage
             default:
                 AppPermissionGuidance().unavailableMessage
             }
@@ -1510,9 +1513,14 @@ final class AppModel {
             }.value
             try Task.checkCancellation()
             ExtensionRegistrationDiagnostics.completed(id, assessment: assessment)
-            return state(for: assessment.availability)
+            return state(
+                for: assessment.availability,
+                readOnly: FileSystemExtensionPreparation.isReadOnlyInstallation(application))
         } catch {
             ExtensionRegistrationDiagnostics.failed(id, error: error)
+            if FileSystemExtensionPreparation.isReadOnlyInstallation(Bundle.main.bundleURL) {
+                return .readOnlyLocation
+            }
             throw error
         }
     }
@@ -1525,14 +1533,42 @@ final class AppModel {
                 registrations, applicationURL: applicationURL))
     }
 
-    nonisolated private static func state(
-        for availability: FileSystemExtensionAvailability
+    nonisolated static func state(
+        for availability: FileSystemExtensionAvailability, readOnly: Bool = false
     ) -> ExtensionState {
-        switch availability {
+        if readOnly && availability != .ready { return .readOnlyLocation }
+        return switch availability {
         case .ready: .ready
         case .disabled: .disabled
         case .differentCopy: .differentCopy
         case .unavailable: .unavailable
+        }
+    }
+
+    private var disksClearForRegistration: Bool {
+        recoveryComplete && attached.isEmpty && untrackedBridgeURLs.isEmpty
+            && !connectionStatusNeedsAttention
+    }
+
+    var canUseRunningCopy: Bool {
+        (extensionState == .differentCopy || extensionState == .unavailable) && !busy
+            && !isCheckingExtension && disksClearForRegistration && usesSystemExtensionCheck
+    }
+
+    func useRunningCopy() {
+        guard canUseRunningCopy else { return }
+        perform(activity: String(localized: "Registering the file system extension…")) { [self] in
+            try await restoreConnections()
+            guard disksClearForRegistration else { throw POSIXError(.EBUSY) }
+            do {
+                try await FileSystemExtensionPreparation.useRunningCopy(
+                    applicationURL: Bundle.main.bundleURL,
+                    permitted: { [weak self] in await self?.disksClearForRegistration ?? false })
+            } catch {
+                await refreshExtensionState()
+                throw error
+            }
+            await refreshExtensionState(recheckAfterSubmission: true)
         }
     }
 

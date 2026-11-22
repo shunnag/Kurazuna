@@ -40,6 +40,6 @@ import Testing
         model.extensionState.noticeMessage
             == String(
                 localized:
-                    "The file system extension belongs to another copy of \(ApplicationIdentity.current.applicationName). Eject connected disks before reinstalling \(ApplicationIdentity.current.applicationName), then click Check Again."
+                    "macOS has registered another copy of \(ApplicationIdentity.current.applicationName). Eject connected disks and quit any other copy, then click Use This Copy to switch the registration to the app you opened."
             ))
 }

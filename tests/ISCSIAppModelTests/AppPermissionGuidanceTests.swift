@@ -23,7 +23,7 @@ import Testing
     #expect(guidance.enableMessage.hasSuffix("then turn on Kurazuna Development."))
     #expect(guidance.localNetworkMessage.contains("check Kurazuna Development in System Settings"))
     #expect(guidance.installationMessage.contains("another copy of Kurazuna Development."))
-    #expect(guidance.installationMessage.contains("reinstalling Kurazuna Development,"))
+    #expect(guidance.installationMessage.contains("Use This Copy"))
     #expect(guidance.unavailableMessage.hasPrefix("Kurazuna Development couldn’t check"))
     #expect(guidance.unavailableMessage.contains("reinstall Kurazuna Development."))
     #expect(guidance.launchFailureMessage.contains("check that Kurazuna Development is enabled."))
@@ -45,4 +45,14 @@ import Testing
     #expect(AppName.inSentence.replacingOccurrences(of: "\u{00A0}", with: " ") == AppName.display)
     // The Development edition's name has two words.
     #expect(AppName.inSentence("Kurazuna Development") == "Kurazuna\u{00A0}Development")
+}
+
+@Test
+func readOnlyLaunchExplainsFinderMoveWithoutBypassingTheExtensionCheck() {
+    for state in [FileSystemExtensionAvailability.differentCopy, .unavailable, .disabled] {
+        #expect(AppModel.state(for: state, readOnly: true) == .readOnlyLocation)
+    }
+    #expect(AppModel.state(for: .ready, readOnly: true) == .ready)
+    #expect(AppModel.state(for: .differentCopy, readOnly: false) == .differentCopy)
+    #expect(AppModel.state(for: .disabled, readOnly: false) == .disabled)
 }

@@ -1,6 +1,7 @@
 import Darwin
 import Foundation
 import ISCSICore
+import OSLog
 
 public struct DiskAttachment: Sendable, Equatable {
     public let device: String
@@ -495,6 +496,9 @@ public struct SystemAttachmentBackend: AttachmentBackend {
         try FileManager.default.createDirectory(
             at: url, withIntermediateDirectories: false,
             attributes: [.posixPermissions: 0o700])
+        let directory = open(url.path, O_DIRECTORY | O_RDONLY | O_CLOEXEC | O_NOFOLLOW)
+        guard directory >= 0 else { throw Self.posixError() }
+        defer { close(directory) }
         let resourceURL: URL
         if let resources {
             let reference = try await resources.save(descriptor)
@@ -504,13 +508,9 @@ public struct SystemAttachmentBackend: AttachmentBackend {
             resourceURL = try descriptor.resourceURL
         }
         // Avoid accepting more buffered raw writes after a session has failed.
-        let source: String
-        if let blockResources {
-            guard resources != nil else { throw AttachmentError.ownershipUnverified }
-            source = try await blockResources.prepare(descriptor).media.device
-        } else {
-            source = resourceURL.absoluteString
-        }
+        if blockResources != nil && resources == nil { throw AttachmentError.ownershipUnverified }
+        let marker = try await blockResources?.prepare(descriptor)
+        let source = marker?.media.device ?? resourceURL.absoluteString
         let arguments = [
             "-F", "-t", ApplicationIdentity.current.fileSystemType, "-o",
             "nobrowse,nosuid,nodev,noexec,sync", source,
@@ -520,9 +520,62 @@ public struct SystemAttachmentBackend: AttachmentBackend {
         let runner = mountCommand
         // Let the bounded mount finish before cancellation so recovery can observe and unload it.
         // Initialization has a 45-second budget; leave time for its failure and cleanup callbacks.
-        _ = try await Task.detached { try await runner("/sbin/mount", arguments, 60) }.value
+        let deadline = ContinuousClock.now.advanced(by: .seconds(60))
+        do {
+            _ = try await Task.detached { try await runner("/sbin/mount", arguments, 60) }.value
+        } catch let error as SystemCommandError where Self.isInitialExtensionLaunchFailure(error) {
+            // launchd can evict an extension job for the previous path and reject the request
+            // that triggered eviction. Only repeat the initial load of this still-unused bridge.
+            try await Task.sleep(for: .milliseconds(350))
+            if let resources {
+                let reference = try ConnectionResourceReference(descriptor: descriptor)
+                guard try await resources.resolve(reference) == descriptor else {
+                    throw AttachmentError.ownershipUnverified
+                }
+            }
+            let inventory = try await diskImages.inventory()
+            guard !inventory.hasImage(under: url) else { throw AttachmentError.ownershipUnverified }
+            if let blockResources {
+                guard let marker,
+                    try blockResources.current(descriptor, inventory: inventory, expectedMount: nil)
+                        == marker
+                else { throw AttachmentError.ownershipUnverified }
+            }
+            try validate(url, descriptor: descriptor)
+            let path = url.path
+            guard
+                try !mounts().contains(where: {
+                    $0.path == path || $0.path.hasPrefix(path + "/") || $0.source == source
+                })
+            else { throw AttachmentError.ownershipUnverified }
+            var original = stat()
+            var current = stat()
+            guard fstat(directory, &original) == 0, lstat(path, &current) == 0,
+                current.st_mode & S_IFMT == S_IFDIR, current.st_uid == geteuid(),
+                current.st_mode & 0o777 == 0o700,
+                original.st_dev == current.st_dev, original.st_ino == current.st_ino,
+                try FileManager.default.contentsOfDirectory(atPath: path).isEmpty
+            else { throw AttachmentError.ownershipUnverified }
+            try Task.checkCancellation()
+            let remaining = ContinuousClock.now.duration(to: deadline).components.seconds
+            guard remaining >= 45 else { throw error }
+            Logger(subsystem: ApplicationIdentity.current.bundleIdentifier, category: "Mount")
+                .notice("Retrying initial FSKit extension launch once")
+            _ = try await Task.detached {
+                try await runner("/sbin/mount", arguments, TimeInterval(remaining))
+            }.value
+        }
         try Task.checkCancellation()
         try await requireOwnership(descriptor, at: url, verifyWritePolicy: true)
+    }
+
+    static func isInitialExtensionLaunchFailure(_ error: SystemCommandError) -> Bool {
+        guard case .failed("mount", 69, let diagnostic) = error else { return false }
+        let lines = diagnostic.split(whereSeparator: \.isNewline)
+        return lines.count == 2 && lines[0].hasPrefix("mount: Loading resource: ")
+            && lines[0].hasSuffix("(com.apple.extensionKit.errorDomain error 2.)")
+            && lines[1]
+                == "mount: File system named \(ApplicationIdentity.current.fileSystemType) not found"
     }
 
     public func inspectBridge(_ descriptor: ConnectionDescriptor, at bridgeURL: URL) async throws

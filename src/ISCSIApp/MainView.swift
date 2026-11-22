@@ -312,8 +312,17 @@ struct MainView: View {
             }
             Button("Check Again") { Task { await model.refreshExtension() } }
                 .disabled(model.isCheckingExtension)
-            if model.extensionState == .disabled {
+            if model.extensionState == .readOnlyLocation {
+                Button("Open Applications Folder") {
+                    NSWorkspace.shared.open(
+                        URL(fileURLWithPath: "/Applications", isDirectory: true))
+                }
+            } else if model.extensionState == .disabled {
                 Button("Open System Settings") { model.openExtensionSettings() }
+            } else if model.extensionState == .differentCopy || model.extensionState == .unavailable
+            {
+                Button("Use This Copy") { model.useRunningCopy() }
+                    .disabled(!model.canUseRunningCopy)
             }
         }
     }

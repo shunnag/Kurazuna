@@ -12,6 +12,13 @@ struct AppPermissionGuidance {
 
     var enableTitle: String { String(localized: "Allow \(name) to Connect Disks") }
     var installationTitle: String { String(localized: "Check the \(name) Installation") }
+    var moveTitle: String { String(localized: "Move \(name) in Finder") }
+    var moveMessage: String {
+        String(
+            localized:
+                "This copy is running from a read-only location. Eject connected disks and quit \(name). In Finder, drag the app into Applications and open it there. If it is already there, move it to another folder in Finder, then move it back."
+        )
+    }
     var launchFailureTitle: String {
         String(localized: "The \(name) Extension Couldn’t Be Started")
     }
@@ -24,7 +31,7 @@ struct AppPermissionGuidance {
     var installationMessage: String {
         String(
             localized:
-                "The file system extension belongs to another copy of \(name). Eject connected disks before reinstalling \(name), then click Check Again."
+                "macOS has registered another copy of \(name). Eject connected disks and quit any other copy, then click Use This Copy to switch the registration to the app you opened."
         )
     }
     var unavailableMessage: String {

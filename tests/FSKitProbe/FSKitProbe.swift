@@ -48,12 +48,18 @@ struct FSKitProbe {
         let modules = installed.filter {
             $0.bundleIdentifier == FileSystemExtensionAvailability.bundleIdentifier
         }
+        let systemInstall =
+            ApplicationIdentity.current == .release
+            && ProcessInfo.processInfo.environment["ISCSI_TEST_SYSTEM_INSTALL"] == "1"
+        let applications =
+            systemInstall
+            ? URL(fileURLWithPath: "/Applications", isDirectory: true)
+            : FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(
+                "Applications", isDirectory: true)
         let application =
             applicationURL
-            ?? FileManager.default.homeDirectoryForCurrentUser
-            .appendingPathComponent(
-                "Applications/" + ApplicationIdentity.current.applicationName + ".app",
-                isDirectory: true)
+            ?? applications.appendingPathComponent(
+                ApplicationIdentity.current.applicationName + ".app", isDirectory: true)
         let state = FileSystemExtensionAvailability.evaluate(
             installed.map {
                 FileSystemExtensionRegistration(
