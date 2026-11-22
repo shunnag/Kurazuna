@@ -1,0 +1,17 @@
+.build/
+.cache/
+build/
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+.DS_Store
+__pycache__/
+.env
+.env.*
+*.p12
+*.p8
+*.key
+*.pem
+*.provisionprofile
+*.mobileprovision
+Secrets/

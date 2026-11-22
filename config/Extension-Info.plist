@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleName</key><string>$(ISCSI_APP_NAME) File System</string>
+    <key>CFBundleDisplayName</key><string>$(ISCSI_APP_NAME)</string>
+    <key>CFBundlePackageType</key><string>XPC!</string>
+    <key>CFBundleShortVersionString</key><string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key><string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>LSMinimumSystemVersion</key><string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+    <key>NSLocalNetworkUsageDescription</key><string>Kurazuna connects to storage servers on your network so you can use their disks on this Mac.</string>
+    <key>ISCSIApplicationEdition</key><string>$(ISCSI_APPLICATION_EDITION)</string>
+    <key>ISCSISharedKeychainAccessGroup</key><string>$(TeamIdentifierPrefix)$(ISCSI_BUNDLE_IDENTIFIER_BASE).shared</string>
+    <key>EXAppExtensionAttributes</key><dict>
+        <key>EXExtensionPointIdentifier</key><string>com.apple.fskit.fsmodule</string>
+        <key>FSShortName</key><string>$(ISCSI_FS_SHORT_NAME)</string>
+        <key>FSSupportsBlockResources</key><true/>
+        <key>FSSupportsGenericURLResources</key><true/>
+        <key>FSSupportsPathURLs</key><false/>
+        <key>FSRequiresSecurityScopedPathURLResources</key><false/>
+        <key>FSSupportedSchemes</key><array><string>iscsi-fskit</string></array>
+        <key>FSActivateOptionSyntax</key><dict><key>shortOptions</key><string>o:r</string></dict>
+        <key>FSMediaTypes</key><dict/>
+        <key>FSPersonalities</key><dict>
+            <key>ISCSIVirtualDisk</key><dict>
+                <key>FSName</key><string>$(ISCSI_APP_NAME)</string>
+                <key>FSSubType</key><integer>0</integer>
+                <key>FSfileObjectsAreCaseSensitive</key><true/>
+            </dict>
+        </dict>
+    </dict>
+</dict></plist>

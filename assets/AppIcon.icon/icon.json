@@ -1,0 +1,66 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "srgb:0.94118,0.95686,0.97255,1.00000",
+      "srgb:0.79608,0.86667,0.92157,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "blend-mode" : "normal",
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "glass" : false,
+          "image-name" : "r5_03_Glow_Original.png",
+          "name" : "r5 Glow - original unchanged",
+          "opacity" : 1
+        }
+      ],
+      "name" : "r5 Glow",
+      "opacity" : 0.8,
+      "shadow" : {
+        "kind" : "none",
+        "opacity" : 0
+      },
+      "specular" : false,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    },
+    {
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "glass" : false,
+          "image-name" : "r5_01_LAN_Corrected.png",
+          "name" : "r5 LAN - corrected perspective",
+          "opacity" : 1
+        },
+        {
+          "blend-mode" : "normal",
+          "glass" : false,
+          "image-name" : "r5_02_Disk_Original.png",
+          "name" : "r5 Disk - original unchanged",
+          "opacity" : 1
+        }
+      ],
+      "name" : "r5 Hardware",
+      "shadow" : {
+        "kind" : "none",
+        "opacity" : 0
+      },
+      "specular" : false,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}

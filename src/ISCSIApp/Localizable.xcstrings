@@ -1,0 +1,2818 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Connection Information Couldn’t Be Removed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続情報を削除できませんでした"
+          }
+        }
+      }
+    },
+    "The disk is disconnected. Unlock your Mac, then click Check Connections to remove its connection information.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの接続は解除されています。Macのロックを解除してから、“接続を確認”をクリックして接続情報を削除してください。"
+          }
+        }
+      }
+    },
+    "The disks are disconnected. Unlock your Mac, then click Check Connections to remove their connection information.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの接続は解除されています。Macのロックを解除してから、“接続を確認”をクリックして接続情報を削除してください。"
+          }
+        }
+      }
+    },
+    "The disk is disconnected, but this copy of Kurazuna can’t remove its connection information. Contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの接続は解除されていますが、このバージョンのKurazunaでは接続情報を削除できません。開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "The disks are disconnected, but this copy of Kurazuna can’t remove their connection information. Contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの接続は解除されていますが、このバージョンのKurazunaでは接続情報を削除できません。開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "The disk is disconnected, but its connection information couldn’t be removed. Click Check Connections to try again. If the problem continues, contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの接続は解除されていますが、接続情報を削除できませんでした。“接続を確認”をクリックして、やり直してください。問題が解決しない場合は、開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "The disks are disconnected, but their connection information couldn’t be removed. Click Check Connections to try again. If the problem continues, contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの接続は解除されていますが、接続情報を削除できませんでした。“接続を確認”をクリックして、やり直してください。問題が解決しない場合は、開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "Waiting for Local Network Access…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ローカルネットワークへのアクセスを待っています…"
+          }
+        }
+      }
+    },
+    "Local Network Access Is Needed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ローカルネットワークへのアクセスが必要です"
+          }
+        }
+      }
+    },
+    "Check %@’s access in System Settings > Privacy & Security > Local Network. If you just allowed access, try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“システム設定”＞“プライバシーとセキュリティ”＞“ローカルネットワーク”で、%@のアクセスを確認してください。許可したばかりの場合は、やり直してください。"
+          }
+        }
+      }
+    },
+    "The operation took too long. Try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作に時間がかかりすぎました。やり直してください。"
+          }
+        }
+      }
+    },
+    "The connection was interrupted, and recent changes may not have been saved. Check the disk in Disk Utility, then try ejecting it again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続が中断され、最近の変更が保存されていない可能性があります。ディスクユーティリティでディスクを確認してから、もう一度取り出してください。"
+          }
+        }
+      }
+    },
+    "The Disk Reported a Problem": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクから問題が報告されました"
+          }
+        }
+      }
+    },
+    "The disk reported a problem with an earlier operation. Recent changes may not have been saved. Check the disk on the server before connecting again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクから、以前の操作に関するエラーが報告されました。変更内容が保存されていない可能性があります。サーバでディスクの状態を確認してから、接続し直してください。"
+          }
+        }
+      }
+    },
+    "Read-Only Connection Required": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み出し専用で接続してください"
+          }
+        }
+      }
+    },
+    "Kurazuna can currently connect this disk only as read-only. To view and copy files, choose Connect Read-Only from the Connect menu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクは現在、読み出し専用でのみ接続できます。ファイルを表示したりコピーしたりするには、“接続”メニューから“読み出し専用で接続”を選択してください。"
+          }
+        }
+      }
+    },
+    "Add Server…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを追加…"
+          }
+        }
+      }
+    },
+    "Add Server": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを追加"
+          }
+        }
+      }
+    },
+    "Servers": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバ"
+          }
+        }
+      }
+    },
+    "Edit Server…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを編集…"
+          }
+        }
+      }
+    },
+    "Remove Server…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを削除…"
+          }
+        }
+      }
+    },
+    "No Servers": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバがありません"
+          }
+        }
+      }
+    },
+    "Add a storage server to find and connect its disks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ストレージサーバを追加すると、ディスクを検索して接続できます。"
+          }
+        }
+      }
+    },
+    "Open System Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定を開く"
+          }
+        }
+      }
+    },
+    "Check Again": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう一度確認"
+          }
+        }
+      }
+    },
+    "Server Address": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバアドレス"
+          }
+        }
+      }
+    },
+    "Find Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを検索"
+          }
+        }
+      }
+    },
+    "Connected Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続中のディスク"
+          }
+        }
+      }
+    },
+    "Connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続済み"
+          }
+        }
+      }
+    },
+    "Reconnecting…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再接続中…"
+          }
+        }
+      }
+    },
+    "Not fully disconnected. Eject to finish.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続解除が完了していません。取り出してください。"
+          }
+        }
+      }
+    },
+    "Show in Finder": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finderに表示"
+          }
+        }
+      }
+    },
+    "Eject": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取り出す"
+          }
+        }
+      }
+    },
+    "Available Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "利用可能なディスク"
+          }
+        }
+      }
+    },
+    "No disks were found on this server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバでディスクが見つかりませんでした。"
+          }
+        }
+      }
+    },
+    "View Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを表示"
+          }
+        }
+      }
+    },
+    "No disks are available.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "利用可能なディスクがありません。"
+          }
+        }
+      }
+    },
+    "Connect": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続"
+          }
+        }
+      }
+    },
+    "Click Find Disks to see the disks available on this server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ディスクを検索”をクリックすると、このサーバで利用できるディスクが表示されます。"
+          }
+        }
+      }
+    },
+    "Use a disk with one computer at a time. Eject it before connecting it to another computer.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクは一度に1台のコンピュータで使用してください。ほかのコンピュータで使用する前に取り出してください。"
+          }
+        }
+      }
+    },
+    "Edit Server": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを編集"
+          }
+        }
+      }
+    },
+    "Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前"
+          }
+        }
+      }
+    },
+    "Authentication": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "認証"
+          }
+        }
+      }
+    },
+    "None": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なし"
+          }
+        }
+      }
+    },
+    "CHAP": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CHAP"
+          }
+        }
+      }
+    },
+    "User Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ユーザ名"
+          }
+        }
+      }
+    },
+    "Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワード"
+          }
+        }
+      }
+    },
+    "At least 12 characters": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "12文字以上"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
+        }
+      }
+    },
+    "Add": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加"
+          }
+        }
+      }
+    },
+    "Save": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        }
+      }
+    },
+    "OK": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Initiator Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "イニシエータ名"
+          }
+        }
+      }
+    },
+    "Use this name when granting this Mac access to a disk on your server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバ側でこのMacにディスクへのアクセスを許可するときは、この名前を使用してください。"
+          }
+        }
+      }
+    },
+    "An Operation Is in Progress": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作を実行中です"
+          }
+        }
+      }
+    },
+    "Eject and Quit": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取り出して終了"
+          }
+        }
+      }
+    },
+    "Authentication Failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "認証に失敗しました"
+          }
+        }
+      }
+    },
+    "Check your user name and password, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ユーザ名とパスワードを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Disk Already Connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクは接続済みです"
+          }
+        }
+      }
+    },
+    "This disk is already connected to this Mac.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクはすでにこのMacに接続されています。"
+          }
+        }
+      }
+    },
+    "Saved Password Is Unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードを利用できません"
+          }
+        }
+      }
+    },
+    "Your saved password couldn’t be accessed. Unlock your Mac and try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードにアクセスできませんでした。Macのロックを解除してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The Operation Couldn’t Be Completed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作を完了できませんでした"
+          }
+        }
+      }
+    },
+    "Check the server address and network connection, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバアドレスとネットワーク接続を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Finding disks…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを検索中…"
+          }
+        }
+      }
+    },
+    "Reading disk information…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの情報を取得中…"
+          }
+        }
+      }
+    },
+    "Connecting disk…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクに接続中…"
+          }
+        }
+      }
+    },
+    "Ejecting disk…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを取り出し中…"
+          }
+        }
+      }
+    },
+    "Ejecting disks…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを取り出し中…"
+          }
+        }
+      }
+    },
+    "The Disk Is in Use": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクは使用中です"
+          }
+        }
+      }
+    },
+    "Close any files or apps using this disk, then try ejecting it again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクを使用しているファイルやアプリを閉じてから、もう一度取り出してください。"
+          }
+        }
+      }
+    },
+    "Disk %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスク%@"
+          }
+        }
+      }
+    },
+    "Kurazuna Is Already Running": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurazunaはすでに起動しています"
+          }
+        }
+      }
+    },
+    "Close the other copy of Kurazuna, then click Check Again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開いているほかのKurazunaを終了してから、“もう一度確認”をクリックしてください。"
+          }
+        }
+      }
+    },
+    "The Connection Has Changed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続の状態が変わりました"
+          }
+        }
+      }
+    },
+    "Check the connected disks in Disk Utility, then click Check Again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクユーティリティで接続中のディスクを確認してから、“もう一度確認”をクリックしてください。"
+          }
+        }
+      }
+    },
+    "Check Connected Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続中のディスクを確認"
+          }
+        }
+      }
+    },
+    "Click Check Again to verify the connected disks before connecting another disk.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別のディスクを接続する前に、“もう一度確認”をクリックして接続中のディスクを確認してください。"
+          }
+        }
+      }
+    },
+    "Connection Information Couldn’t Be Saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続情報を保存できませんでした"
+          }
+        }
+      }
+    },
+    "Check the available storage on your Mac, then click Check Again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macのストレージの空き容量を確認してから、“もう一度確認”をクリックしてください。"
+          }
+        }
+      }
+    },
+    "Checking connected disks…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続中のディスクを確認中…"
+          }
+        }
+      }
+    },
+    "Check Connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続を確認"
+          }
+        }
+      }
+    },
+    "Some connection information couldn’t be verified. Check the disks in Disk Utility before continuing.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一部の接続情報を確認できませんでした。続ける前に、ディスクユーティリティでディスクを確認してください。"
+          }
+        }
+      }
+    },
+    "Open Disk Utility": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクユーティリティを開く"
+          }
+        }
+      }
+    },
+    "Check this connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続を確認してください"
+          }
+        }
+      }
+    },
+    "Connection Status Is Unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続状況を確認できません"
+          }
+        }
+      }
+    },
+    "Quit": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "終了"
+          }
+        }
+      }
+    },
+    "Unverified Connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未確認の接続"
+          }
+        }
+      }
+    },
+    "Connection Information Couldn’t Be Read": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続情報を読み込めませんでした"
+          }
+        }
+      }
+    },
+    "The Connection Was Interrupted": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続が中断されました"
+          }
+        }
+      }
+    },
+    "Connection interrupted": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続が中断されました"
+          }
+        }
+      }
+    },
+    "Connection status unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続状況を確認できません"
+          }
+        }
+      }
+    },
+    "Close files on this disk, then eject it before connecting again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスク上のファイルを閉じてから取り出し、接続し直してください。"
+          }
+        }
+      }
+    },
+    "Eject %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@を取り出す"
+          }
+        }
+      }
+    },
+    "Show %@ in Finder": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@をFinderに表示"
+          }
+        }
+      }
+    },
+    "Check the server and network connection, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバとネットワークの接続を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Enter a Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワードを入力"
+          }
+        }
+      }
+    },
+    "Enter a password for this server and user name.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバとユーザ名に対応するパスワードを入力してください。"
+          }
+        }
+      }
+    },
+    "Server Settings Are Unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバ設定を確認できません"
+          }
+        }
+      }
+    },
+    "Click Check Connections to read your server settings again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“接続を確認”をクリックして、サーバ設定を読み直してください。"
+          }
+        }
+      }
+    },
+    "Server Settings Couldn’t Be Saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバ設定を保存できませんでした"
+          }
+        }
+      }
+    },
+    "Check the available storage on your Mac, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macのストレージの空き容量を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Password Couldn’t Be Saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワードを保存できませんでした"
+          }
+        }
+      }
+    },
+    "Unlock your Mac, then try saving the password again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macのロックを解除してから、もう一度パスワードを保存してください。"
+          }
+        }
+      }
+    },
+    "Saved Passwords Couldn’t Be Removed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードを削除できませんでした"
+          }
+        }
+      }
+    },
+    "Unlock your Mac, then try removing the saved passwords again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macのロックを解除してから、もう一度保存済みのパスワードを削除してください。"
+          }
+        }
+      }
+    },
+    "Saving server…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを保存中…"
+          }
+        }
+      }
+    },
+    "Removing server…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを削除中…"
+          }
+        }
+      }
+    },
+    "Updating saved passwords…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードを更新中…"
+          }
+        }
+      }
+    },
+    "Saved Passwords Need Attention": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードを確認してください"
+          }
+        }
+      }
+    },
+    "Some changes to saved passwords couldn’t be completed. Unlock your Mac and try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードへの変更を完了できませんでした。Macのロックを解除してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "To finish removing saved passwords, eject the disks using them, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワードの削除を完了するには、そのパスワードを使用しているディスクを取り出してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Try Again": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "やり直す"
+          }
+        }
+      }
+    },
+    "Saved Passwords Are Unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードを利用できません"
+          }
+        }
+      }
+    },
+    "This copy of Kurazuna can’t access saved passwords. Contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このバージョンのKurazunaでは保存済みのパスワードにアクセスできません。開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "Saved Password Is Missing": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワードが見つかりません"
+          }
+        }
+      }
+    },
+    "Edit this server and enter its password, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバの設定を編集してパスワードを入力してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Server Settings Aren’t Supported": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバの設定に対応していません"
+          }
+        }
+      }
+    },
+    "This server uses connection settings that Kurazuna doesn’t support. Check the server’s iSCSI settings, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバの接続設定には対応していません。サーバのiSCSI設定を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "This disk is unavailable. Check the server, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクは利用できません。サーバを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Kurazuna doesn’t support this type of storage device.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この種類のストレージデバイスには対応していません。"
+          }
+        }
+      }
+    },
+    "No media is available in this device.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスにメディアがありません。"
+          }
+        }
+      }
+    },
+    "Access to this disk is restricted. Check the server’s access settings, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクへのアクセスは制限されています。サーバのアクセス設定を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Disk information couldn’t be read. Try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの情報を読み取れませんでした。やり直してください。"
+          }
+        }
+      }
+    },
+    "Disk Information Is Unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの情報を取得できません"
+          }
+        }
+      }
+    },
+    "This disk isn’t ready. Check its status on the server, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクは準備ができていません。サーバでディスクの状態を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "View disks for %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のディスクを表示"
+          }
+        }
+      }
+    },
+    "Connect Disk %@ from %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$@のディスク%1$@に接続"
+          }
+        }
+      }
+    },
+    "“%@” Is in Use": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”は使用中です"
+          }
+        }
+      }
+    },
+    "“%@” Couldn’t Be Ejected": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”を取り出せませんでした"
+          }
+        }
+      }
+    },
+    "The disk may still be connected. Check it in Disk Utility, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクがまだ接続されている可能性があります。ディスクユーティリティでディスクを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "A disk has more than one connection. Eject its connections before connecting it again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同じディスクが複数回接続されています。そのディスクの接続をすべて取り出してから、もう一度接続してください。"
+          }
+        }
+      }
+    },
+    "No volumes are mounted on this disk. To use a new disk with this Mac, initialize it in Disk Utility.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクには、マウントされているボリュームがありません。新しいディスクをこのMacで使用するには、ディスクユーティリティで初期化してください。"
+          }
+        }
+      }
+    },
+    "Device": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス"
+          }
+        }
+      }
+    },
+    "Check %@ in Disk Utility": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクユーティリティで%@を確認"
+          }
+        }
+      }
+    },
+    "File System Extension Is Unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファイルシステム機能拡張を利用できません"
+          }
+        }
+      }
+    },
+    "Checking File System Extension": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ファイルシステム機能拡張を確認中"
+          }
+        }
+      }
+    },
+    "Mutual CHAP": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相互CHAP"
+          }
+        }
+      }
+    },
+    "Server User Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバのユーザ名"
+          }
+        }
+      }
+    },
+    "Server Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバのパスワード"
+          }
+        }
+      }
+    },
+    "Saved password": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのパスワード"
+          }
+        }
+      }
+    },
+    "Use different passwords for your Mac and the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このMacとサーバには、異なるパスワードを使用してください。"
+          }
+        }
+      }
+    },
+    "Server Authentication Failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバの認証に失敗しました"
+          }
+        }
+      }
+    },
+    "Check the server’s user name and password, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバのユーザ名とパスワードを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Enter Both Passwords": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "両方のパスワードを入力してください"
+          }
+        }
+      }
+    },
+    "To change mutual CHAP authentication, enter both passwords.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相互CHAPの認証設定を変更するには、両方のパスワードを入力してください。"
+          }
+        }
+      }
+    },
+    "Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索"
+          }
+        }
+      }
+    },
+    "Same as Connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続と同じ"
+          }
+        }
+      }
+    },
+    "Your passwords are stored in your keychain.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワードはキーチェーンに保存されます。"
+          }
+        }
+      }
+    },
+    "Your passwords are stored in your keychain. To keep a saved password, leave its field blank.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワードはキーチェーンに保存されています。保存済みのパスワードを引き続き使用する場合は、そのフィールドを空欄のままにしてください。"
+          }
+        }
+      }
+    },
+    "Your passwords are stored in your keychain. To keep a saved password, leave its field blank. To change a mutual CHAP password, enter both.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスワードはキーチェーンに保存されています。保存済みのパスワードを引き続き使用する場合は、そのフィールドを空欄のままにしてください。相互CHAPのパスワードを変更する場合は、両方を入力してください。"
+          }
+        }
+      }
+    },
+    "Enter Both Passwords for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索用パスワードを両方入力してください"
+          }
+        }
+      }
+    },
+    "To change mutual CHAP for finding disks, enter both passwords.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索で使用する相互CHAPの設定を変更するには、両方のパスワードを入力してください。"
+          }
+        }
+      }
+    },
+    "Enter a Password for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索用パスワードを入力してください"
+          }
+        }
+      }
+    },
+    "Enter a password for the user name under Finding Disks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索で使用するユーザ名のパスワードを入力してください。"
+          }
+        }
+      }
+    },
+    "Couldn’t Find Disks on “%@”": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”でディスクを検索できませんでした"
+          }
+        }
+      }
+    },
+    "This server requires a user name and password to find disks. Edit this server and choose an authentication method under Finding Disks, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバでディスクを検索するには、ユーザ名とパスワードが必要です。このサーバを編集して、“ディスクの検索”で認証方法を選択してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Edit this server and enter the password under Finding Disks, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバを編集して、“ディスクの検索”のパスワードを入力してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Couldn’t Connect to the Server": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバに接続できませんでした"
+          }
+        }
+      }
+    },
+    "Check the server’s connection addresses and iSCSI settings, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバの接続先アドレスとiSCSI設定を確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "Connection Address": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続先アドレス"
+          }
+        }
+      }
+    },
+    "Canceling…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル中…"
+          }
+        }
+      }
+    },
+    "Volumes Couldn’t Be Mounted": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ボリュームをマウントできませんでした"
+          }
+        }
+      }
+    },
+    "The disk is connected, but one or more volumes couldn’t be mounted. Check the disk in Disk Utility.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクは接続されていますが、マウントできなかったボリュームがあります。ディスクユーティリティでディスクを確認してください。"
+          }
+        }
+      }
+    },
+    "Checking disk…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを確認中…"
+          }
+        }
+      }
+    },
+    "Force Eject…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "強制的に取り出す…"
+          }
+        }
+      }
+    },
+    "Force Eject": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "強制的に取り出す"
+          }
+        }
+      }
+    },
+    "Force Eject “%@”?": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”を\n強制的に取り出しますか?"
+          }
+        }
+      }
+    },
+    "Unsaved changes on this disk may be lost.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このディスクの未保存の変更内容は失われる可能性があります。"
+          }
+        }
+      }
+    },
+    "The connection to the server was lost. Changes that haven’t been saved to the disk will be lost.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバとの接続が切れました。ディスクに保存されていない変更内容は失われます。"
+          }
+        }
+      }
+    },
+    "Force Eject %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@を強制的に取り出す"
+          }
+        }
+      }
+    },
+    "“%@” Is Connected Again": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”は再接続されました"
+          }
+        }
+      }
+    },
+    "The Disk Is Connected Again": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクは再接続されました"
+          }
+        }
+      }
+    },
+    "The connection to the server was restored, so the disk wasn’t force ejected.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバとの接続が回復したため、ディスクは強制的に取り出されませんでした。"
+          }
+        }
+      }
+    },
+    "The Disk Couldn’t Be Connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクを接続できませんでした"
+          }
+        }
+      }
+    },
+    "The disk couldn’t be prepared for use on this Mac. Try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このMacでディスクを使用するための準備ができませんでした。やり直してください。"
+          }
+        }
+      }
+    },
+    "Connection Authentication": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続時の認証"
+          }
+        }
+      }
+    },
+    "Authentication for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索時の認証"
+          }
+        }
+      }
+    },
+    "Connection User Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続時のユーザ名"
+          }
+        }
+      }
+    },
+    "User Name for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索時のユーザ名"
+          }
+        }
+      }
+    },
+    "Connection Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続時のパスワード"
+          }
+        }
+      }
+    },
+    "Password for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索時のパスワード"
+          }
+        }
+      }
+    },
+    "Connection Server User Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続時のサーバのユーザ名"
+          }
+        }
+      }
+    },
+    "Server User Name for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索時のサーバのユーザ名"
+          }
+        }
+      }
+    },
+    "Connection Server Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続時のサーバのパスワード"
+          }
+        }
+      }
+    },
+    "Server Password for Finding Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの検索時のサーバのパスワード"
+          }
+        }
+      }
+    },
+    "Remove “%@”?": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”を削除しますか?"
+          }
+        }
+      }
+    },
+    "The server’s settings and saved passwords will be removed from this Mac.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このMacからサーバの設定と保存済みのパスワードが削除されます。"
+          }
+        }
+      }
+    },
+    "Read-only disk": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み出し専用のディスク"
+          }
+        }
+      }
+    },
+    "Connect Read-Only": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み出し専用で接続"
+          }
+        }
+      }
+    },
+    "Connect Disk %@ from %@ read-only": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$@のディスク%1$@に読み出し専用で接続"
+          }
+        }
+      }
+    },
+    "Select a Server": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバを選択"
+          }
+        }
+      }
+    },
+    "Choose a server in the sidebar to find and connect its disks.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サイドバーでサーバを選択すると、ディスクを検索して接続できます。"
+          }
+        }
+      }
+    },
+    "This connection can’t confirm when writes are complete. To view and copy files, choose Connect Read-Only from the Connect menu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この接続では書き込みの完了を確認できません。ファイルを表示したりコピーしたりするには、“接続”メニューから“読み出し専用で接続”を選択してください。"
+          }
+        }
+      }
+    },
+    "You can connect to this disk read-only to view and copy files.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み出し専用で接続すると、このディスクのファイルを表示したりコピーしたりできます。"
+          }
+        }
+      }
+    },
+    "This connection can’t confirm when writes are complete. You can connect read-only to view and copy files.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この接続では書き込みの完了を確認できません。読み出し専用で接続すると、ファイルを表示したりコピーしたりできます。"
+          }
+        }
+      }
+    },
+    "Find disks on this server again, then try connecting.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバでディスクをもう一度検索してから、接続してください。"
+          }
+        }
+      }
+    },
+    "Kurazuna couldn’t read its saved server settings. Click Check Connections to try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存済みのサーバ設定を読み込めませんでした。“接続を確認”をクリックして、やり直してください。"
+          }
+        }
+      }
+    },
+    "Allow %@ to Connect Disks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のディスク接続を許可"
+          }
+        }
+      }
+    },
+    "Check the %@ Installation": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のインストールを確認してください"
+          }
+        }
+      }
+    },
+    "The %@ Extension Couldn’t Be Started": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の機能拡張を起動できません"
+          }
+        }
+      }
+    },
+    "In System Settings > General > Login Items & Extensions, click By Category, click File System Extensions, then turn on %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“システム設定”＞“一般”＞“ログイン項目と機能拡張”で“カテゴリ別”をクリックし、“ファイルシステム機能拡張”で%@をオンにしてください。"
+          }
+        }
+      }
+    },
+    "The file system extension belongs to another copy of %@. Eject connected disks before reinstalling %@, then click Check Again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別の%@アプリのファイルシステム機能拡張が登録されています。接続中のディスクを取り出してから%@をインストールし直し、“もう一度確認”をクリックしてください。"
+          }
+        }
+      }
+    },
+    "%@ couldn’t check its file system extension. Click Check Again. If the problem continues, reinstall %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のファイルシステム機能拡張を確認できませんでした。“もう一度確認”をクリックしてください。問題が解決しない場合は、%@を再インストールしてください。"
+          }
+        }
+      }
+    },
+    "In System Settings > General > Login Items & Extensions, click By Category, click File System Extensions, then check that %@ is enabled. If it’s already enabled, eject any connected iSCSI disks and restart your Mac, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“システム設定”＞“一般”＞“ログイン項目と機能拡張”で“カテゴリ別”をクリックし、“ファイルシステム機能拡張”で%@が有効になっていることを確認してください。すでに有効な場合は、接続中のiSCSIディスクを取り出し、Macを再起動してからやり直してください。"
+          }
+        }
+      }
+    },
+    "Allow access when asked, or check %@ in System Settings > Privacy & Security > Local Network.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "許可を求められたらアクセスを許可してください。または“システム設定”＞“プライバシーとセキュリティ”＞“ローカルネットワーク”で、%@のアクセスを確認してください。"
+          }
+        }
+      }
+    },
+    "Connection Information Remains": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続情報が残っています"
+          }
+        }
+      }
+    },
+    "Connection information couldn’t be removed. Unlock your Mac, then click Check Connections to try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続情報を削除できませんでした。Macのロックを解除してから、“接続を確認”をクリックしてやり直してください。"
+          }
+        }
+      }
+    },
+    "This copy of Kurazuna can’t remove the connection information. Contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このバージョンのKurazunaでは接続情報を削除できません。開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "Some connection information couldn’t be removed. Click Check Connections to try again. If the problem continues, contact the developer for assistance.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一部の接続情報を削除できませんでした。“接続を確認”をクリックしてやり直してください。問題が解決しない場合は、開発元に問い合わせてください。"
+          }
+        }
+      }
+    },
+    "Connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続"
+          }
+        }
+      }
+    },
+    "Disconnected": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続解除済み"
+          }
+        }
+      }
+    },
+    "Remove connection information for %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の接続情報を削除"
+          }
+        }
+      }
+    },
+    "Removing connection information…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続情報を削除中…"
+          }
+        }
+      }
+    },
+    "LUN %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LUN %@"
+          }
+        }
+      }
+    },
+    "Refresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新"
+          }
+        }
+      }
+    },
+    "Refresh disks for %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のディスクを更新"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除"
+          }
+        }
+      }
+    },
+    "Server": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバ"
+          }
+        }
+      }
+    },
+    "Connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続"
+          }
+        }
+      }
+    },
+    "Eject all disks and quit %@?": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのディスクを取り出して%@を終了しますか?"
+          }
+        }
+      }
+    },
+    "Connected disks must be ejected before quitting.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "終了する前に、接続中のディスクを取り出す必要があります。"
+          }
+        }
+      }
+    },
+    "Copy": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コピー"
+          }
+        }
+      }
+    },
+    "Wait for the current operation to finish before quitting %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在の操作が完了してから、%@を終了してください。"
+          }
+        }
+      }
+    },
+    "%@ couldn’t verify which disks are connected. Check the disks in Disk Utility before quitting.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@で接続中のディスクを確認できませんでした。終了する前に、ディスクユーティリティでディスクを確認してください。"
+          }
+        }
+      }
+    },
+    "Read-only": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み出し専用"
+          }
+        }
+      }
+    },
+    "Show Info": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "情報を表示"
+          }
+        }
+      }
+    },
+    "Show Info for %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の情報を表示"
+          }
+        }
+      }
+    },
+    "Show Info for Disk %@ from %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$@のディスク%1$@の情報を表示"
+          }
+        }
+      }
+    },
+    "Target": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ターゲット"
+          }
+        }
+      }
+    },
+    "LUN": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LUN"
+          }
+        }
+      }
+    },
+    "The server didn’t accept the user name and password under Connection. Edit this server and check them, or choose a different authentication method under Finding Disks, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“接続”のユーザ名とパスワードがサーバに拒否されました。このサーバを編集してユーザ名とパスワードを確認するか、“ディスクの検索”で別の認証方法を選択してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server didn’t accept the user name and password under Finding Disks. Edit this server and check them, or choose a different authentication method, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ディスクの検索”のユーザ名とパスワードがサーバに拒否されました。このサーバを編集してユーザ名とパスワードを確認するか、別の認証方法を選択してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server user name and password under Connection don’t match the server. Edit this server and check them, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“接続”のサーバのユーザ名とパスワードがサーバと一致しません。このサーバを編集して確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server user name and password under Finding Disks don’t match the server. Edit this server and check them, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ディスクの検索”のサーバのユーザ名とパスワードがサーバと一致しません。このサーバを編集して確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "This server doesn’t use a user name and password to find disks. Edit this server and choose None for authentication under Finding Disks, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバでは、ディスクの検索にユーザ名とパスワードを使用しません。このサーバを編集して、“ディスクの検索”の“認証”で“なし”を選択してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "This server requires a user name and password to find disks. To choose an authentication method under Finding Disks, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバでディスクを検索するには、ユーザ名とパスワードが必要です。“ディスクの検索”で認証方法を選択するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "The server didn’t accept the user name and password under Connection. To check them, or to choose a different authentication method under Finding Disks, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“接続”のユーザ名とパスワードがサーバに拒否されました。ユーザ名とパスワードを確認するか、“ディスクの検索”で別の認証方法を選択するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "The server didn’t accept the user name and password under Finding Disks. To check them, or to choose a different authentication method, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ディスクの検索”のユーザ名とパスワードがサーバに拒否されました。ユーザ名とパスワードを確認するか、別の認証方法を選択するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "The server user name and password under Connection don’t match the server. To check them, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“接続”のサーバのユーザ名とパスワードがサーバと一致しません。確認するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "The server user name and password under Finding Disks don’t match the server. To check them, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ディスクの検索”のサーバのユーザ名とパスワードがサーバと一致しません。確認するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "This server doesn’t use a user name and password to find disks. To choose None for authentication under Finding Disks, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバでは、ディスクの検索にユーザ名とパスワードを使用しません。“ディスクの検索”の“認証”で“なし”を選択するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "To enter the password under Finding Disks, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ディスクの検索”のパスワードを入力するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "To enter this server’s password, eject its disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このサーバのパスワードを入力するには、ディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "%@ — %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ — %@"
+          }
+        }
+      }
+    },
+    "The server closed the connection. If it requires a user name and password to find disks, edit this server and choose an authentication method under Finding Disks, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバでディスクを検索するのにユーザ名とパスワードが必要な場合は、このサーバを編集して、“ディスクの検索”で認証方法を選択してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. If it requires a user name and password to find disks, eject this server’s disks, then edit the server and choose an authentication method under Finding Disks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバでディスクを検索するのにユーザ名とパスワードが必要な場合は、このサーバのディスクを取り出してから、サーバを編集して“ディスクの検索”で認証方法を選択してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. Edit this server and check the server address and the user name and password under Connection, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバを編集して、サーバアドレスと“接続”のユーザ名とパスワードを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. To check the server address and the user name and password under Connection, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。サーバアドレスと“接続”のユーザ名とパスワードを確認するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. Edit this server and check the server address and the user name and password under Finding Disks, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバを編集して、サーバアドレスと“ディスクの検索”のユーザ名とパスワードを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. To check the server address and the user name and password under Finding Disks, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。サーバアドレスと“ディスクの検索”のユーザ名とパスワードを確認するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    },
+    "Couldn’t View Disks on “%@”": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”のディスクを表示できませんでした"
+          }
+        }
+      }
+    },
+    "The server closed the connection. If it requires a user name and password to connect to its disks, edit this server and choose an authentication method under Connection, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバのディスクに接続するのにユーザ名とパスワードが必要な場合は、このサーバを編集して、“接続”で認証方法を選択してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. If it requires a user name and password to connect to its disks, eject this server’s disks, then edit the server and choose an authentication method under Connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバのディスクに接続するのにユーザ名とパスワードが必要な場合は、このサーバのディスクを取り出してから、サーバを編集して“接続”で認証方法を選択してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. Edit this server and check the user name and password under Connection, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。このサーバを編集して、“接続”のユーザ名とパスワードを確認してから、やり直してください。"
+          }
+        }
+      }
+    },
+    "The server closed the connection. To check the user name and password under Connection, eject this server’s disks, then edit the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サーバが接続を閉じました。“接続”のユーザ名とパスワードを確認するには、このサーバのディスクを取り出してから、サーバを編集してください。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
