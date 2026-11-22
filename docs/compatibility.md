@@ -2,7 +2,11 @@
 
 Kurazuna uses FSKit to expose a LUN as a fixed-length disk image. macOS attaches that image and mounts its partitions using its own file-system drivers. One host must have exclusive access to a writable disk.
 
-## Beta 1 (build 202)
+## Beta 1 (build 203)
+
+We used Sparkle’s update client to install the signed ZIP over an isolated prior-version test app. After the update, the host app, FSKit extension and Sparkle framework matched the notarized distribution. We installed the updated app in the normal location and used its extension to connect an APFS disk with CHAP, write and flush data, eject it normally, and recover the written file and marker from a target snapshot. Build 202 predates the updater and requires a one-time manual replacement.
+
+## Original beta 1 (build 202)
 
 On an Apple silicon Mac running macOS 27.3 beta (26C5047e), we installed the Developer ID–signed and notarized app from the distribution ZIP. The installed FSKit extension mounted an APFS disk through a CHAP-authenticated connection. We wrote and flushed data, ejected the disk, and verified the contents against the target’s storage.
 

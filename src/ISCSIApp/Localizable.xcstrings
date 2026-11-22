@@ -1,6 +1,83 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "Check for Updates…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートを確認…"
+          }
+        }
+      }
+    },
+    "Software Update": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソフトウェアアップデート"
+          }
+        }
+      }
+    },
+    "Automatically check for updates": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートを自動的に確認"
+          }
+        }
+      }
+    },
+    "Automatically download and install updates": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートを自動的にダウンロードしてインストール"
+          }
+        }
+      }
+    },
+    "Finish any disk operations and eject your disks before updating Kurazuna.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクの操作が完了したら、ディスクを取り出してから Kurazuna をアップデートしてください。"
+          }
+        }
+      }
+    },
+    "Check Connected Disks Before Updating": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデートする前に接続中のディスクを確認してください"
+          }
+        }
+      }
+    },
+    "Check the disks in Disk Utility, then choose Check Connections in Kurazuna.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクユーティリティでディスクを確認してから、Kurazunaで「接続を確認」を選択してください。"
+          }
+        }
+      }
+    },
     "Connection Information Couldn’t Be Removed": {
       "extractionState": "manual",
       "localizations": {

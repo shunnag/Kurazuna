@@ -1037,6 +1037,10 @@ final class AppModel {
         }
         return pending.allSatisfy { accounts.contains($0.account) }
     }
+    var canInstallSoftwareUpdate: Bool {
+        !busy && !connectionStatusNeedsAttention && attached.isEmpty && untrackedBridgeURLs.isEmpty
+    }
+
     var canEditServers: Bool {
         document != nil && recoveryComplete && !connectionStatusNeedsAttention && !busy
             && serverRemovalRequest == nil

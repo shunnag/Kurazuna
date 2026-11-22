@@ -16,4 +16,11 @@
     <key>ISCSIUsesBlockResources</key><true/>
     <key>ISCSISharedKeychainAccessGroup</key><string>$(TeamIdentifierPrefix)$(ISCSI_BUNDLE_IDENTIFIER_BASE).shared</string>
     <key>NSLocalNetworkUsageDescription</key><string>Kurazuna connects to storage servers on your network so you can use their disks on this Mac.</string>
+    <key>SUFeedURL</key><string>https://raw.githubusercontent.com/shunnag/Kurazuna/main/appcast.xml</string>
+    <key>SUPublicEDKey</key><string>lQWR6vCHfOx7DKARBt8Mu/A93Yg9EHP1IbefwKMFnSc=</string>
+    <key>SUEnableAutomaticChecks</key><true/>
+    <key>SUAutomaticallyUpdate</key><true/>
+    <key>SURequireSignedFeed</key><true/>
+    <key>SUVerifyUpdateBeforeExtraction</key><true/>
+    <key>SUSignedFeedFailureExpirationInterval</key><integer>0</integer>
 </dict></plist>

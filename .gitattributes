@@ -1,0 +1,2 @@
+# Keep the notice from the upstream Sparkle distribution byte-for-byte.
+config/Sparkle-LICENSE.txt -text -whitespace

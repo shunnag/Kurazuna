@@ -5,6 +5,10 @@ options:
     macOS: '27.0'
   developmentLanguage: en
   knownRegions: [en, ja]
+packages:
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.10.1
 settings:
   base:
     SWIFT_VERSION: '6.0'
@@ -17,7 +21,7 @@ settings:
     SWIFT_EMIT_LOC_STRINGS: YES
     SWIFT_INCLUDE_PATHS: $(SRCROOT)/src/ISCSIPlatformNative
     MARKETING_VERSION: '1.0'
-    CURRENT_PROJECT_VERSION: 202
+    CURRENT_PROJECT_VERSION: 203
     ISCSI_BUNDLE_IDENTIFIER_BASE: dev.soba.iscsi.kurazuna
     ISCSI_APP_NAME: Kurazuna
     ISCSI_FS_SHORT_NAME: kurazuna
@@ -81,6 +85,9 @@ targets:
       - path: LICENSE-APACHE
         type: file
         buildPhase: resources
+      - path: config/Sparkle-LICENSE.txt
+        type: file
+        buildPhase: resources
       - path: assets/AppIcon.icon
         type: file
         buildPhase: resources
@@ -92,7 +99,11 @@ targets:
         INFOPLIST_FILE: config/App-Info.plist
         CODE_SIGN_ENTITLEMENTS: config/App.entitlements
         GENERATE_INFOPLIST_FILE: NO
+      configs:
+        Release:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) KURAZUNA_UPDATES
     dependencies:
+      - package: Sparkle
       - target: ISCSICore
       - target: ISCSINetwork
       - target: ISCSIPlatform

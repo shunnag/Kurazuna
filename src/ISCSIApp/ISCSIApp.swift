@@ -6,14 +6,29 @@ struct ISCSIApp: App {
     @State private var model = AppModel()
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
 
+    #if KURAZUNA_UPDATES
+        @StateObject private var updates = SoftwareUpdates()
+    #endif
+
     var body: some Scene {
         Window(AppName.display, id: "main") {
             AppRootView(model: model, delegate: delegate)
+                #if KURAZUNA_UPDATES
+                    .onAppear {
+                        delegate.updates = updates
+                        updates.start(for: model)
+                    }
+                #endif
         }
         // Tall enough for the server editor with every authentication field, and wide enough
         // for the toolbar's actions, without scrolling.
         .defaultSize(width: 960, height: 800)
         .commands {
+            #if KURAZUNA_UPDATES
+                CommandGroup(after: .appInfo) {
+                    Button("Check for Updates…") { updates.check() }.disabled(!updates.canCheck)
+                }
+            #endif
             CommandGroup(replacing: .newItem) {
                 Button("Add Server…") {
                     model.addServer()
@@ -39,6 +54,9 @@ struct ISCSIApp: App {
         }
         Settings {
             InitiatorSettings(model: model)
+                #if KURAZUNA_UPDATES
+                    .environmentObject(updates)
+                #endif
         }
     }
 }

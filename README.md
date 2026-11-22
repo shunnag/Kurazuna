@@ -8,6 +8,8 @@ Download **Kurazuna-1.0-beta.1.zip** from [GitHub Releases](https://github.com/s
 
 ![Kurazuna Preview with sample disks connected, reconnecting, and available to connect](docs/images/disks-en.jpg)
 
+Starting with build 203, Kurazuna automatically checks for and downloads signed updates. Choose **Kurazuna → Check for Updates…** to check now, or change automatic updates in Settings. If you have build 202, eject your disks and quit Kurazuna before replacing the app with this download once.
+
 ## Connect a disk
 
 1. Open Kurazuna and click **Open System Settings**. Turn on Kurazuna in **File System Extensions**. You can also reach it from General → Login Items & Extensions → By Category.

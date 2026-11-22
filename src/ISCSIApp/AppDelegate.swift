@@ -1,6 +1,9 @@
 import AppKit
 
 @MainActor final class AppDelegate: NSObject, NSApplicationDelegate {
+    #if KURAZUNA_UPDATES
+        weak var updates: SoftwareUpdates?
+    #endif
     weak var model: AppModel?
     var showMainWindow: (@MainActor () -> Void)?
 
@@ -22,6 +25,23 @@ import AppKit
             _ = runSafeQuitAlert(alert)
             return .terminateCancel
         }
+        #if KURAZUNA_UPDATES
+            // A prepared Sparkle update may install on ordinary quit. Keep the app alive
+            // if the inventory is uncertain, including a bridge the app cannot eject.
+            if updates?.updatePrepared == true,
+                model.connectionStatusNeedsAttention || !model.untrackedBridgeURLs.isEmpty
+            {
+                let alert = NSAlert()
+                alert.messageText = String(localized: "Check Connected Disks Before Updating")
+                alert.informativeText = String(
+                    localized:
+                        "Check the disks in Disk Utility, then choose Check Connections in Kurazuna."
+                )
+                alert.addButton(withTitle: String(localized: "OK"))
+                _ = runSafeQuitAlert(alert)
+                return .terminateCancel
+            }
+        #endif
         if model.connectionStatusNeedsAttention {
             let warning = model.quitWarning
             let alert = NSAlert()
